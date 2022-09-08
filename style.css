@@ -27,36 +27,49 @@
     align-self: center;
   }
 
+  .height-100vh {
+    height: 100vh;
+    position: relative; 
+  }
+
   #headerImage img{
     max-width: 100%;
     padding-left: 2%;
     width: 45rem;
   }
-  .grid2{
+
+  .flexbox {
+    position: relative;
     display: flex;
-    margin-top: 20px;
-    display: inline-block;
-  position: relative;
-  }
-
-  #sf img{
-    max-width: 100%;
-    padding-left: 4%;
-    height: 40rem;
-    padding-right: 4%;
-
-  }
-  #sf h2{
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    max-height: 80vh;
+    gap: 20%;
+    align-self: center;
     align-items: center;
-    display: flex;
-    color: white;
-    position: absolute;
-    top: 30rem;
-    left: 2rem;
-    right: 1rem;
-    bottom: 0;
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-right: 5%;
     flex: wrap;
+  }
+  
+  .container {
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+  
+  .image-category {
+    max-width: 100%;
+  }
+  .image-description{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
   }
   
   
