@@ -27,10 +27,6 @@ header {
   align-self: center;
 }
 
-.height-100vh {
-  height: 100vh;
-  position: relative; 
-}
 
 #headerImage img{
   max-width: 100%;
@@ -39,29 +35,23 @@ header {
 }
 
 .flexbox {
-  position: relative;
   display: flex;
-  flex-direction: row;
   width: 100%;
-  max-height: 80vh;
   gap: 20%;
-  align-self: center;
-  align-items: center;
   padding-left: 5%;
   padding-top: 4%;
   padding-right: 5%;
-  flex: wrap;
 }
 
 .container {
   width: 100%;
-  display: block;
   text-align: center;
   position: relative;
 }
 
 .image-category {
   max-width: 100%;
+  max-height: 900px;
 }
 .image-description{
   position: absolute;
@@ -175,7 +165,10 @@ nav {
   font-size: 60px;
   color: #edf0f1;
 }
-
+footer {
+  margin-top: 0px;
+  padding-top: 0px;
+}
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
@@ -206,5 +199,7 @@ nav {
   } .grid{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  } 
+  } .flexbox{
+    flex-wrap: wrap;
+  }
 }
