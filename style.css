@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
   
   header {
@@ -13,29 +13,31 @@
   }
 
   .grid{
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns:60% 30%;
+    margin-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 20rem;
+    grid-template-columns: 20rem 9rem;
+    gap: 2rem;
+    padding: 0 1em;
   }
 
   #greeting{
     text-align: center;
-    margin-top: 150px;
-    margin-left: 20%;
   }
 
   #headerImage{
-    margin-left: 60px;
   }
 
   #headerImage img{
-    width: 95%;
-
+    max-width: 100%;
+    padding-left: 2rem;
+    width: 45rem;
   }
   .grid2{
     display: grid;
     margin-top: 20px;
-    grid-template-columns:60% 30%;
+    grid-template-columns: 20;
   }
 
   #sf{
