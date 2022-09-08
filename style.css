@@ -17,7 +17,6 @@
     display: flex;
     flex-wrap: wrap;
     min-width: 20rem;
-    grid-template-columns: 20rem 9rem;
     gap: 2rem;
     padding: 0 1em;
   }
@@ -37,12 +36,29 @@
     width: 45rem;
   }
   .grid2{
-    display: grid;
+    display: flex;
     margin-top: 20px;
-    grid-template-columns: 20;
+    display: inline-block;
+  position: relative;
   }
 
-  #sf{
+  #sf img{
+    max-width: 100%;
+    padding-left: 2rem;
+    height: 40rem;
+  }
+  #sf h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    position: absolute;
+    top: 30rem;
+    left: 2rem;
+    right: 0;
+    bottom: 0;
+    flex: wrap;
+
 
   }
   
