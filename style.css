@@ -27,12 +27,9 @@
     align-self: center;
   }
 
-  #headerImage{
-  }
-
   #headerImage img{
     max-width: 100%;
-    padding-left: 2rem;
+    padding-left: 2%;
     width: 45rem;
   }
   .grid2{
@@ -44,8 +41,10 @@
 
   #sf img{
     max-width: 100%;
-    padding-left: 2rem;
+    padding-left: 4%;
     height: 40rem;
+    padding-right: 4%;
+
   }
   #sf h2{
     justify-content: center;
@@ -55,7 +54,7 @@
     position: absolute;
     top: 30rem;
     left: 2rem;
-    right: 0;
+    right: 1rem;
     bottom: 0;
     flex: wrap;
   }
