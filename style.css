@@ -13,19 +13,22 @@
   }
 
   .grid{
-    margin-top: 5vh;
     display: flex;
-    flex-wrap: wrap;
-    min-width: 20rem;
-    gap: 2rem;
-    padding: 0 1em;
+    width: 100%;
+    gap: 10%;
+    padding-left: 5%;
+    padding-top: 4%;
+    padding-right: 5%;
+    flex: wrap;
   }
 
   #greeting{
     text-align: center;
     margin: 0 auto;
     align-self: center;
+    font-size: 150%;
   }
+
 
   .height-100vh {
     height: 100vh;
@@ -65,7 +68,7 @@
   }
   .image-description{
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -196,4 +199,14 @@
       display: initial;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #greeting {
+      font-size: .5rem;
+  
+    }
+    @media screen and (max-width: 600px) {
+      .image-description {
+        font-size: .8rem;
+      }
   
