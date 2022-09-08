@@ -1,212 +1,210 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    background-color: #24252a;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .grid{
-    display: flex;
-    width: 100%;
-    gap: 10%;
-    padding-left: 5%;
-    padding-top: 4%;
-    padding-right: 5%;
-    flex: wrap;
-  }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #24252a;
+}
 
-  #greeting{
-    text-align: center;
-    margin: 0 auto;
-    align-self: center;
-    font-size: 150%;
-  }
+.grid{
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 20rem;
+  gap: 2rem;
+  padding-left: 6rem;
+}
+
+#greeting{
+  text-align: center;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.height-100vh {
+  height: 100vh;
+  position: relative; 
+}
+
+#headerImage img{
+  max-width: 100%;
+  padding-left: 2%;
+  width: 45rem;
+}
+
+.flexbox {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-height: 80vh;
+  gap: 20%;
+  align-self: center;
+  align-items: center;
+  padding-left: 5%;
+  padding-top: 4%;
+  padding-right: 5%;
+  flex: wrap;
+}
+
+.container {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+}
+
+.image-category {
+  max-width: 100%;
+}
+.image-description{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+}
 
 
-  .height-100vh {
-    height: 100vh;
-    position: relative; 
-  }
+#logo {
+  color: white;
+}
 
-  #headerImage img{
-    max-width: 100%;
-    padding-left: 2%;
-    width: 45rem;
-  }
+nav {
+  order: 1;
+}
 
-  .flexbox {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    max-height: 80vh;
-    gap: 20%;
-    align-self: center;
-    align-items: center;
-    padding-left: 5%;
-    padding-top: 4%;
-    padding-right: 5%;
-    flex: wrap;
-  }
-  
-  .container {
-    width: 100%;
-    display: block;
-    text-align: center;
-    position: relative;
-  }
-  
-  .image-category {
-    max-width: 100%;
-  }
-  .image-description{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2rem;
-  }
-  
-  
-  #logo {
-    color: white;
-  }
-  
-  nav {
-    order: 1;
-  }
-  
-  .nav__links a,
-  .cta,
-  .overlay__content a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  
-  .nav__links {
-    list-style: none;
-    display: flex;
-    font-size: 16px;
-  }
-  
-  .nav__links li {
-    padding: 0px 20px;
-  }
-  
-  .nav__links li:nth-child(1) {
-    padding: 0 20px 0 0;
-  }
-  
-  .nav__links li a {
-    transition: all 0.3s ease 0s;
-  }
-  
-  .nav__links li a:hover {
-    color: #0088a9;
-  }
-  
-  .cta {
-    order: 2;
-    margin-left: 20px;
-    padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
-  
-  /* Mobile Nav */
-  
-  .menu {
-    display: none;
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: #24252a;
-    overflow-x: hidden;
-    transition: all 0.5s ease 0s;
-  }
-  
-  .overlay--active {
-    width: 100%;
-  }
-  
-  .overlay__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
+.nav__links a,
+.cta,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  font-size: 16px;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+.cta {
+  order: 2;
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
   .overlay a {
-    padding: 15px;
-    font-size: 36px;
-    display: block;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #0088a9;
+    font-size: 20px;
   }
   .overlay .close {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-    color: #edf0f1;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px;
-    }
-    .overlay .close {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .nav__links,
-    .cta {
-      display: none;
-    }
-    .menu {
-      display: initial;
-    }
-  }
+}
 
-  @media screen and (max-width: 600px) {
-    #greeting {
-      font-size: .5rem;
-  
-    }
-    @media screen and (max-width: 600px) {
-      .image-description {
-        font-size: .8rem;
-      }
-  
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #greeting{
+    font-size: 60%;
+  }
+  .image-description {
+    font-size: 100%;
+  } .grid{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  } 
+}
