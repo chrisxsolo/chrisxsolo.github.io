@@ -17,6 +17,9 @@ header {
   margin-top: 70%;
 }
 
+#question{
+  font-size:100%;
+}
 
 
 .flexbox {
@@ -187,7 +190,12 @@ footer {
     padding-right: 1.5rem;
   } .flexbox{
     flex-wrap: wrap;
-  } #box0{
-    height: ;
+  } #question{
+    font-size: 70%;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+  } #box0description{
+    margin-bottom: 30%;
   }
 }
