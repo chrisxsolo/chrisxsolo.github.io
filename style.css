@@ -11,6 +11,36 @@
     padding: 30px 10%;
     background-color: #24252a;
   }
+
+  .grid{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns:60% 30%;
+  }
+
+  #greeting{
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 20%;
+  }
+
+  #headerImage{
+    margin-left: 60px;
+  }
+
+  #headerImage img{
+    width: 95%;
+
+  }
+  .grid2{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns:60% 30%;
+  }
+
+  #sf{
+
+  }
   
   #logo {
     color: white;
