@@ -34,7 +34,6 @@
     <main class = "body_sec">
 
         <div class="btn-group">
-
         <div class="outer-grid">
             <div class="inner-grid">
         <button type="button" class="open-modal" data-open="modal1">
@@ -47,7 +46,9 @@
             <img src="images/salesforcepark.jpeg"/>
             </div>
             <div class="inner-grid">
+                <button type="button" class="open-modal" data-open="modal3">
                 <img src="images/japantown.jpeg"/>
+                </button>
                 <img src="images/chinatown.jpeg"/>
                 <img src="images/fortpoint.jpeg"/>
             </div>
@@ -93,11 +94,29 @@
               <div class="card_image"><img src="/images/IronWorks.jpeg"></div>
               <div class="card_content">
                 <h2 class="card_title">Iron Works</h2>
-                <p class="card_text">An industrial location with neutral, brown tones. Address: 555 20th St
-                    Unit 1
-                    San Francisco, CA  94158
-                    United States </p>
-                <button class="card_btn">📸: @marco.dng</button>
+                <p class="card_text">An industrial location with neutral, brown tones. </br>
+                    📸: @marco.dng
+                    <input class= "card_btn" type="button" onclick="location.href='https://www.google.com/maps/place/555+20th+St,+San+Francisco,+CA+94107/@37.7605831,-122.387777,17z/data=!3m1!4b1!4m5!3m4!1s0x808f7fb924ea229b:0xdc7ff740abf90e86!8m2!3d37.7605789!4d-122.3855883" value = "address" />
+                </div>
+            </div>
+          </li>
+      </section>
+    </div>
+  </div>
+  <div id="overlay"></div>
+
+  <div class="modal" id="modal3" data-animation="mixInAnimations">
+    <div class="modal-dialog">
+      <section class="modal-content">
+        <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/images/japantown.jpeg"></div>
+              <div class="card_content">
+                <h2 class="card_title">Japan Town</h2>
+                <p class="card_text">Japan Town has an iconic structure called the Peace Pagoda with some gorgeous sub locations in the area. Address:  </br>
+                    📸: @marcusqsilva
+                    
+                    <input class= "card_btn" type="button" onclick="location.href='https://www.google.com/maps/place/Peace+Pagoda/@37.7850802,-122.4308554,18z/data=!3m1!4b1!4m5!3m4!1s0x808580bed2cfc76f:0x25cc62d13f634f1e!8m2!3d37.7850239!4d-122.4298442" value ="address"/>
               </div>
             </div>
           </li>

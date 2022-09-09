@@ -124,6 +124,8 @@ img {
 
 
 .outer-grid {
+  text-decoration: none;
+  border: none;
   display: flex;
   flex-wrap: wrap;
   padding-left: 20%;
@@ -169,6 +171,7 @@ button{
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  border: none;
 }
 
 .modal.is-visible {
