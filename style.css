@@ -50,8 +50,12 @@ header {
   transform: translate(-50%, -50%);
   color: white;
   font-size: 2rem;
+  text-decoration: none;
 }
-
+ a{
+  text-decoration: none;
+  color: white;
+ }
 
 #logo {
   color: white;
