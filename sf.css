@@ -8,9 +8,7 @@
   box-sizing: border-box;
 }
 
-#myBtn{
-  text-decoration: none;
-}
+
 
 html {
   background-color: #ecf9ff;
@@ -42,7 +40,7 @@ img {
   vertical-align: middle;
 }
 
-.btn {
+.card_btn{
   color: #ffffff;
   padding: 0.8rem;
   font-size: 14px;
@@ -193,8 +191,6 @@ img {
 }
 
 
-
-
 #overlay {
   position: fixed;
   opacity: 0;
@@ -203,6 +199,7 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
+  width:100%;
   background-color: rgba(0, 0, 0, .5);
   pointer-events: none;
 }
@@ -210,19 +207,9 @@ img {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  width:100%;
 }
 
-
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
 
 /* The Close Button */
 .close {
@@ -243,9 +230,16 @@ img {
 }
 
 
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal {
+    width: 100%;
+    padding-bottom: 10%;
+    margin-top: 0%;  
+    margin-right: 3%;
 
-
-
+  }
+}
 
 
 
