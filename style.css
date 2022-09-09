@@ -29,7 +29,18 @@ header {
   padding-top: 3%;
 }
 
-
+#product0{
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  top: 0;
+  left: 0;
+}
 .flexbox {
   display: flex;
   width: 100%;
@@ -190,11 +201,19 @@ footer {
   }
 }
 
+
+
+
+
+
+
 @media only screen and (max-width: 800px) {
   #greeting{
     padding-top: 1rem;
     font-size: 60%;
     padding-bottom: 1rem;
+  } #product0{
+   
   }
   .image-description {
     font-size: 100%;
@@ -205,10 +224,12 @@ footer {
     flex-wrap: wrap;
   } #question{
     font-size: 70%;
+    padding-top: 10%;
+    padding-bottom: 10%;
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
   } #box0description{
     margin-bottom: 30%;
-  }
+  } 
 }
