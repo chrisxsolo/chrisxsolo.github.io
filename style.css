@@ -19,6 +19,8 @@ header {
 
 #question{
   font-size:100%;
+  padding-left: 35%;
+  padding-top: 3%;
 }
 
 
@@ -28,6 +30,7 @@ header {
   padding-left: 5%;
   padding-top: 4%;
   padding-right: 5%;
+  gap: 2rem;
 }
 
 .container {
