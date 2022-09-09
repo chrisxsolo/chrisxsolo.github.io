@@ -1,6 +1,8 @@
 const openEls = document.querySelectorAll("[data-open]");
 const closeEls = document.querySelectorAll("[data-close]");
 const isVisible = "is-visible";
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
 for (const el of openEls) {
   el.addEventListener("click", function() {
@@ -27,3 +29,18 @@ document.addEventListener("keyup", e => {
     document.querySelector(".modal.is-visible").classList.remove(isVisible);
   }
 });
+
+overlay.addEventListener('click', () => {
+	const modals = document.querySelectorAll('.modal.active')
+	modals.forEach(modal => {
+	  closeModal(modal)
+	})
+  })
+  
+  closeModalButtons.forEach(button => {
+	button.addEventListener('click', () => {
+	  const modal = button.closest('.modal')
+	  closeModal(modal)
+	})
+  })
+  
