@@ -118,14 +118,10 @@ img {
 
 
 
-
-
 .outer-grid {
-  text-decoration: none;
-  border: none;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 20%;
+  padding: 0 4px;
 }
 .inner-grid {
   flex: 25%;
@@ -135,7 +131,7 @@ img {
 .inner-grid img {
   margin-top: 8px;
   width: 100%;
-  padding: 3%;
+  padding: 10px;
 }
 
 button{
@@ -143,9 +139,6 @@ button{
   border: none;
 
 }
-
-
-
 
 
 
@@ -240,8 +233,6 @@ button{
   }
 }
 
-
-
 @media screen and (max-width: 800px) {
   .inner-grid {
      flex: 50%;
@@ -250,6 +241,7 @@ button{
     padding-left: 2%;
   }
 }
+
 @media screen and (max-width: 600px) {
   .inner-grid {
      flex: 50%;
